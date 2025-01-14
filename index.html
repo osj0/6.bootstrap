@@ -16,6 +16,12 @@
     -->
   </head>
   <body>
+<div id="wrap">
+    <div class="popup-view">
+      <a href="#" class="popup-close"><i class="fa-solid fa-x"></i></a>
+      <img src="./img/popup.png" alt="">
+  </div>
+
 
     <!-- s : nav -->
     <nav class="container navbar navbar-expand-lg">
@@ -48,14 +54,25 @@
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner msl-bx">
         <div class="carousel-item msl-item active" data-bs-interval="10000">
-          <img src="./img/msl01.png" class="d-block w-100" alt="...1">
+          <div class="img"><img src="./img/msl01.png" class="d-block w-100" alt="...1"></div>
+          <div class="txt">
+            <p>할머니! 할아버지!</p>
+            <p>모두가 선택한 프리미엄 여행</p>
+          </div>
         </div>
         <div class="carousel-item msl-item" data-bs-interval="2000">
-          <img src="./img/msl02.png" class="d-block w-100" alt="...2">
+          <div class="img"><img src="./img/msl02.png" class="d-block w-100" alt="...2"></div>
+          <div class="txt">
+            <p>1년 내내 변함없는 즐거움</p>
+          </div>
         </div>
         <div class="carousel-item msl-item">
-          <img src="./img/msl03.png" class="d-block w-100" alt="...3">
+          <div class="img"><img src="./img/msl03.png" class="d-block w-100" alt="...3"></div>
+          <div class="txt">
+            <p>이번엔 어떤 여행지가<br>특가로 나올까?</p>
+          </div>
         </div>
+        
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -582,7 +599,7 @@
           <p class="copy mt-2">COPYRIGHTⓒ HANATOUR SERVICE INC. ALL RIGHTS RESERVED</p>
       </div>
     </footer>
-
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
  <!-- Swiper JS -->
  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -640,5 +657,13 @@
      },
    });
  </script>
+ <script>
+  window.onload = function(){
+     
+      document.querySelector(".popup-close").addEventListener("click", function(){
+          document.querySelector(".popup-view").style.display = "none";
+      });
+  }
+</script>
   </body>
 </html>

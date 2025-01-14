@@ -1,3 +1,11 @@
+/* popup */
+#wrap {position: relative;}
+.popup-view {border:1px solid #ddd; position: absolute;left: 50px;top: 100px;width: 400px; height: 400px; z-index: 99;} 
+.popup-close {display: inline-block; position: absolute;right: 10px;top: 10px;border: 1px solid #ddd;border-radius: 30px;width: 35px;height: 35px;text-align: center;
+  display: flex;justify-content: center;align-items: center;}
+.popup-close i{color:#fff;font-size: 14px;}
+
+
 *{padding:0; margin:0; color:#333;}
 a{display:block; cursor: pointer; text-decoration: none;color:#333;}
 p{margin:0;}
@@ -58,6 +66,10 @@ main{margin-top:130px;}
 
 .msl-bx{}
 .msl-item{width:100%; height:500px; overflow:hidden;} 
+.msl-item .img{position: relative;}
+.msl-item .img::after{content:""; display: block; clear: both; width: 100%; height: 100%; background:rgba(0, 0, 0, 0.2); position: absolute;top: 0;left: 0;}
+.msl-item .txt{position: absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+.msl-item .txt p{color:#fff; font-size: 25px; text-align: center;}
 /*.msl-item img{width: 100%;height: 100%;object-fit: cover;object-position: center;}*/
 
 .cont > h2{font-size: 1.25rem; font-weight: bold;}
