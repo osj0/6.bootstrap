@@ -1,6 +1,7 @@
 /* popup */
 #wrap {position: relative;}
-.popup-view {border:1px solid #ddd; position: absolute;left: 50px;top: 100px;width: 400px; height: 400px; z-index: 99;} 
+.popup-view {border:1px solid #ddd; position: absolute;left: 50px;top: 100px;width: 250px; height: 250px; z-index: 99;} 
+.popup-view img{width: 250px; height: 250px;}
 .popup-close {display: inline-block; position: absolute;right: 10px;top: 10px;border: 1px solid #ddd;border-radius: 30px;width: 35px;height: 35px;text-align: center;
   display: flex;justify-content: center;align-items: center;}
 .popup-close i{color:#fff;font-size: 14px;}
@@ -158,7 +159,8 @@ footer{font-size:14px;}
 }
 @media screen and (min-width:48rem){
 
-
+  .popup-view {width: 400px; height: 400px; z-index: 99;} 
+  .popup-view img{width: 400px; height: 400px;}
 .menu-bx{flex-wrap: wrap;}
 .menu-item{width:10%;}
 
