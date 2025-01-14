@@ -362,29 +362,40 @@
       <!-- s : 테마여행 -->
       <div class="cont mt-5 container">
         <h2>지금 주목해야 할<br>추천 테마여행</h2>
-        <div class="containerswiper mySwiper theme-bx">
+        <div class="swiper mySwiper theme-bx">
           <div class="swiper-wrapper theme-inner">
-            <div class="swiper-slide theme-item theme1"><a href="#">
-              <p class="tit text-center">일본 얼리어드 할인</p>
-              <p class="stit">인당 최대 10만원 사전예약 할인!</p>
-            </a></div>
-            <div class="swiper-slide theme-item theme2"><a href="#">
-              <p class="tit text-center">중국 온천 여행</p>
-              <p class="stit">색다른 매력, 중국 온천</p>
-            </a></div>
-            <div class="swiper-slide theme-item theme3"><a href="#">
-              <p class="tit text-center">지금 가야 좋은 홋카이도</p>
-              <p class="stit">눈축제,온천 그리고 미식</p>
-            </a></div>
-            <div class="swiper-slide theme-item theme4"><a href="#">
-              <p class="tit text-center">스페인/포르투갈/모로코</p>
-              <p class="stit">누구나 꿈에 그리는 여행지</p>
-            </a></div>
+            <div class="swiper-slide">
+              <div class="theme-item theme1"><a href="#">
+                <p class="tit text-center">일본 얼리어드 할인</p>
+                <p class="stit">인당 최대 10만원 사전예약 할인!</p>
+              </a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="theme-item theme2"><a href="#">
+                <p class="tit text-center">중국 온천 여행</p>
+                <p class="stit">색다른 매력, 중국 온천</p>
+              </a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="theme-item theme3"><a href="#">
+                <p class="tit text-center">지금 가야 좋은 홋카이도</p>
+                <p class="stit">눈축제,온천 그리고 미식</p>
+              </a></div>
+            </div>
+            <div class="swiper-slide">
+              <div class="theme-item theme4"><a href="#">
+                <p class="tit text-center">스페인/포르투갈/모로코</p>
+                <p class="stit">누구나 꿈에 그리는 여행지</p>
+              </a></div>
+            </div>
           </div>
-          <!-- <div class="swiper-pagination"></div> -->
+          <div class="swiper-pagination"></div>
         </div>
       </div>
       <!-- e : 테마여행 -->
+
+       <!-- Swiper -->
+  
     </main>
 
     <!-- s : 고객센터 -->
@@ -498,6 +509,37 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+   var swiper = new Swiper(".mySwiper", {
+     slidesPerView: 1,
+     spaceBetween: 10,
+     pagination: {
+       el: ".swiper-pagination",
+       clickable: true,
+     },
+     autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+     breakpoints: {
+       640: {
+         slidesPerView: 2,
+         spaceBetween: 20,
+       },
+       1024: {
+         slidesPerView: 3,
+         spaceBetween: 0,
+       },
+       1200: {
+         slidesPerView: 4,
+         spaceBetween: 0,
+       },
+     },
+   });
+ </script>
   </body>
 </html>
